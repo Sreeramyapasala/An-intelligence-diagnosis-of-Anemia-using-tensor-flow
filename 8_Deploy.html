@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    background-color: #282c34;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #363b45;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover {
+    background-color: #4fa3d1;
+}
+
+center {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #4fa3d1;
+}
+
+</style>
+<body>
+    <br>
+    <a href="{% url 'Home_4' %}" style="color: rgb(0, 0, 0);" class="btn btn-primary">Home</a>
+    <br><br><br>
+    <h1 style="text-align: center;color: #4fa3d1;"> Anemia Detection  </h1>
+    <br><br>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <center><p style="color: antiquewhite;">{{ form.as_p }}</p></center><br><br>
+        <button type="submit">Submit</button>
+    </form><br>
+    <center>
+        {% if obj %}
+            <img src="{{ obj.image.url }}" height="100" width="100"><br>
+            <h5 class="card-title"></h5><br>
+            <h2 style="color: rgb(219, 207, 207);">{{predict | upper}}<h2>
+            <h2 style="color: rgb(56, 118, 189); font-size: 15px">{{output | upper}}</h2><br>
+            
+        {% endif %}
+      </center>      
+</body>
+</html>

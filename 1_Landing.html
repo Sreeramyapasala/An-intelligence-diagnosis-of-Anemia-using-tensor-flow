@@ -1,0 +1,393 @@
+<!-- 
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              html {
+              height: 100%;
+            }
+            * {
+              font-family: Montserrat;
+              color: white;
+            }
+            body {
+              font-family: Montserrat;
+              color: white;
+              background: url("/static/images/W3.jpg");
+              background-size: cover;
+              background-position: center;
+            }
+
+            #content {
+              text-align: center;
+              padding-top: 25%;
+              text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                    0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+            }
+            body h1 {
+              font-weight: 900;
+              font-size: 5em;
+            }
+            body h3 {
+              font-weight: 600;
+              font-style: italic;
+              font-size: 2em;
+            }
+
+            .navbar-brand {
+              font-weight: 600;
+            }
+
+            body hr {
+              width: 1100px;
+              border: 0;
+                height: 3px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), 
+                                                            rgba(255, 255, 255, 0.75), 
+                                                            rgba(255, 255, 255, 0));
+            }
+
+            a:hover, a:focus{
+              text-decoration: none;
+              text-decoration-color: none;
+            }
+    </style>
+</head>
+<body>
+    <html>
+<head>
+	<title>TITLE</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="frontPage.css">
+</head>
+
+<body>
+<div class="background">
+<nav class="navbar navbar-default">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">LETS GP TO SOCIAL MEDIA</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="https://twitter.com/crfheart?lang=en">TWITTER</a></li>
+        <li><a href="https://www.facebook.com/CardiovascularMed/">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com/explore/tags/cardiovascular/top/">INSTAGRAM</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cardiovascular_disease">WIKIPEDIA</a></li>
+        <li><a href="https://www.cardiovascular.abbott/us/en/contact-us.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="content">
+					
+					<h1>CARDIOVASCULAR PREDICTION</h1>
+					<h3>Cardiovascular refers to the system of the heart and blood vessels responsible for circulating blood throughout the body.</h3>
+					<hr>
+					<button class="btn btn-default btn-lg"><a href="{% url 'Register_2' %}">USER REGISTERATION</a></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @font-face {
+    font-family: 'AdiHaus';
+    src: url('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    border-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  
+:root {
+    --theme-color-black: #333333; /* rgba(51, 51, 51, 1) */
+    --theme-color-brown: #423A3A; 
+    --theme-color-red: #CD3A24;
+    --theme-color-white: #FEFFFF; /* rgba(254, 255, 255, 1) */
+}
+  
+/* ---------- MAIN BODY DECLERATIONS ---------- */
+
+html, body {
+    background-color: var(--theme-color-white);
+    font-family: "AdiHaus";
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    font-family: 'AdiHaus';
+}
+
+.mobile-container {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.hero-image-desktop {
+    display: none;
+}
+
+/* ---------- HERO BANNER DECLERATIONS ---------- */
+.hero-banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner .logo-wrapper {
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: auto;
+}
+    
+    .logo-wrapper img {
+        display: block;
+        height: 2.5rem;
+        margin: 0 auto;
+        width: auto;
+    }
+
+.hero-banner .hero-image {
+    background-image: url(https://assets.codepen.io/6060109/athlete-girl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 376px;
+    width: 100%;
+}
+
+/* ---------- TEXT INFO DECLERATIONS ---------- */
+.text-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+    .text-info > * {
+        padding: 0 2.5rem 1rem;
+    }
+
+    /* intended for the first h2 within .text-info */
+    .text-info h2:nth-child(1) {
+        color: var(--theme-color-red);
+        font-weight: normal;
+        padding-top: 1.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .text-info h2 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--theme-color-brown);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .text-info p {
+        color: var(--theme-color-black);
+        line-height: 24px;
+    }
+
+    .text-info .email-signup {
+        margin: 1rem 0 6rem;
+        position: relative;
+        width: 100%;
+    }
+    
+        .email-signup .email-input {
+            border: 1px solid rgba(51, 51, 51, .7);
+            border-radius: 3px;
+            padding: 1rem 1.5rem;
+            opacity: .5;
+            width: 100%;
+        }
+
+        .email-signup .email-input:focus {
+            background-color: var(--theme-color-white);
+            outline: 2px solid var(--theme-color-black);
+            opacity: 1;
+        }
+
+        .email-signup .email-submit {
+            background-color: var(--theme-color-black);
+            border-bottom: 1px solid var(--theme-color-black);
+            border-radius: 2px;
+            color: var(--theme-color-white);
+            cursor: pointer;
+            font-weight: bold;
+            opacity: 1;
+            padding: 1rem 1.5rem;
+            position: absolute;
+            right: 150px;
+            margin-right: 2.5rem;
+            z-index: 10;
+        }
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(https://assets.codepen.io/6060109/destop-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 3.5rem;
+    }
+
+    .mobile-container {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-banner .logo-wrapper {
+        margin-left: 3.5rem;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+        .logo-wrapper img {
+            margin: 0 0 0;
+            padding-left: 2.5rem;
+        }
+
+    .hero-image {
+        display: none;
+    }
+
+    .text-info {
+        text-align: left;
+        align-items: start;
+    }
+    
+        .text-info h2 {
+            font-size: 4.5rem;
+        }
+
+        .text-info p {
+            font-size: 16px;
+        }
+
+        .text-info input {
+            font-size: 16px;
+        }
+  
+        .text-info .email-signup {
+            margin: 1rem 0 7rem;
+        }
+
+    .hero-image-desktop {
+        display: block;
+        height: 100%;
+        width: 55vw;
+    }
+
+    .hero-image-desktop img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+  
+    .email-signup .email-submit {
+        border-bottom: 2px solid var(--theme-color-black);
+    }
+}
+</style>
+<body>
+  <div class="mobile-container">
+  <header>
+    <section class="hero-banner">
+      
+      <div class="hero-image"></div>
+    </section>
+  </header>
+  <main>
+    <article class="text-info">
+      <h2>ANEMIA</h2>
+      <h2>Organism<br>Classifications</h2>
+      <p>anemia classification using artificial intelligence (AI) is a fascinating and valuable application of Deep learning techniques. </p>
+      <section class = "email-signup">
+        <form>
+          
+          <button class="email-submit" value="Go" type="submit" text="Progress" for="email-address"><a href="{% url 'Register_2' %}" style="color: white;">PROGRESS</a></button>
+        </form>
+      </section>
+    </article>
+  </main>
+</div>
+<div class="hero-image-desktop">
+  <img src="https://images.unsplash.com/photo-1484903820457-9e585d707e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1368&q=80" alt="Femail athlete squinting towards the camera.">
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+	<!-- Latest compiled and minified BootstrapCSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--   Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<style>
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .left {
+    background-image: url("/static/images/EYE1.jpg");
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+  
+  .col-md-6 {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  p, h1 {
+    letter-spacing: .08em;
+    font-weight: 300;
+    line-height: 2em;
+  }
+  
+  button.btn {
+    border: 2px solid #ffffff;
+    background-color: #f4c5dc;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: .1em;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 0px 0px 50px;
+  }
+  
+  button.btn:hover {
+    font-weight: 800;
+    background-color: #cccccc;
+    color: #000000;
+  }
+  
+  .content-header, div p {
+    margin: 50px;
+    margin-top: 50px;
+  }
+  
+  .right h1 {
+    letter-spacing: .1em;
+    font-weight: 100;
+    font-size: 100px;
+  }
+  
+  p a {
+    color: #f4c5dc;
+  }
+  
+  footer p {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2em;
+    margin-bottom: 0px;
+    margin-top: 150px;
+  }
+</style>
+<body>
+  <div class="col left col-md-6"><img class="cover-img" src="">
+	</div>
+
+
+	<div class="col right col-md-6">
+		<div class="content-header">
+			<center><h1>LENET</h1></center>
+		</div>
+
+
+		<div>
+			<p>
+        LeNet, a seminal convolutional neural network (CNN) architecture, stands as a cornerstone in the evolution of deep learning. Developed by Yann LeCun and collaborators in the late 1990s, its primary application was handwritten digit recognition. Comprising seven layers, including convolutional, pooling, and fully connected layers, LeNet introduced fundamental concepts such as convolutional operations and subsampling. Notably, it incorporated activation functions like sigmoid and hyperbolic tangent, alongside the softmax function for classification. Although initially tailored for digit recognition, the enduring impact of LeNet extends beyond its original purpose, influencing the design of subsequent CNNs for diverse image recognition tasks. This pioneering architecture laid the groundwork for the robust and sophisticated neural networks that are pervasive in contemporary artificial intelligence applications.
+      </p>
+			<button class="btn"><a href="{% url 'Home_4' %}">HOME</a></button>
+
+			
+		</div>
+	</div>
+	<!--  Font Awesome  -->
+	<script src="https://use.fontawesome.com/83fc84333f.js">
+	</script>
+</body>
+</html>

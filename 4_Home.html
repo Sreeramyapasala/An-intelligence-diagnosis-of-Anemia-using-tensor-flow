@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Test</title>
+</head>
+<style>
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color:white; 
+    font-family: 'Flamenco', cursive; 
+}
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.63)),url("https://images.unsplash.com/photo-1542907299-8bd21f11f540?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80") no-repeat;
+    background-size:cover;
+    height:100vh;
+    background-position: center;
+  
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear:both;
+}
+.row{
+    max-width: 1180px;
+    margin:0 auto;
+}
+.logo{
+    height:80px;
+    width:auto;
+    float:left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top:60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left:40px;
+}
+.main-nav li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    padding:50x 0;
+}
+.main-nav li a:hover{
+    border-bottom: 1px solid #CD3A24;
+    border-width: 3px;
+}
+
+.main-content-header{
+    width:1180px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color:#CD3A24;
+    margin-right: 15px;
+    border:1px solid #CD3A24;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+.btn-nav{
+    background-color: transparent;
+    color:white;
+    border: 1px solid #fff;
+}
+.btn-nav:hover{
+    background: #CD3A24;
+}
+.effect{
+    animation:effect 1s infinite;
+}
+@keyframes effect{
+    0%{
+        color: green;
+    }
+    25%{
+        color: rgb(255, 0, 212);
+    }
+    50%{
+        color:rgb(255, 0, 0);
+    }
+    75%{
+        color:rgb(0, 17, 255);
+    }
+    100%{
+        color:rgb(0, 255, 0);
+    }
+}
+
+.mobile-icon{
+    display:none;
+}
+
+/* Responsive  */
+
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width:100%;
+        padding:0 2%;
+
+    }
+    .main-nav{
+        margin-right:10px;
+    }
+  .logo{
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width:990px){
+    h1{ font-size: 200%;}
+}
+@media only screen and (max-width:768px){
+    h1{font-size:180%;
+  }
+  body{
+    font-size:18px;
+  }
+    .main-nav{display:none;
+            float: left;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color:#fff;
+        font-size: 200%;
+        position:relative;
+        top:40px;
+        left:-40px;
+
+    }
+    .main-nav li{
+        display: block;
+        margin-top:10px;
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+    .btn-nav{
+        margin-top: 20px
+    }
+    h1{
+        font-size: 150%;
+      margin-top:30px;
+
+    }
+    .logo{
+        height:60px;
+    }
+    .mobile-icon{
+        font-size:100%;
+    }
+    body{
+        text-align: center;
+      font-size:16px;
+    }
+    .main-content-header{
+        text-align: center;
+    }
+}
+</style>
+<body>
+  <header>
+    <nav>
+        <div class="row clearfix">
+            
+            <ul class="main-nav animated slideInDown" id="slide">
+                <li><a href="{% url 'Home_4' %}">Home</a></li>
+                <li><a href="{% url 'Domain_Result_6' %}">About Us</a></li>
+                <li><a href="{% url 'Problem_Statement_7' %}">Problem statement</a></li>
+                <li><a href="{% url 'Teamates_5' %}">Foundations</a></li>
+                <li><a href="{% url 'Login_3' %}">Logout</a></li>
+            </ul>
+            <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+        </div>
+    </nav>
+    <div class="main-content-header animated zoomIn">
+        <h1>Findout the <span class="effect"> ANEMIA</i> </span> 
+            Classifications using Artificial Intelligence
+        </h1><br>
+        <a href="{% url 'Deploy_8' %}" class="btn btn-full">Predict</a>
+        <a href="{% url 'Out_Database_9' %}" class="btn btn-nav">Database</a>
+    </div>
+</header>
+<script>
+    function slideshow(){
+        var x = document.getElementById("slide");
+        if(x.style.display === "none"){
+            x.style.display="block";
+        }
+        else{
+            x.style.display="none";
+        }
+    }
+</script>
+</body>
+</html>
